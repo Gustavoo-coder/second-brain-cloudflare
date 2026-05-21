@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "wrangler dev",
+    "preinstall": "npm config set legacy-peer-deps true",
     "deploy": "wrangler deploy",
     "db:create": "wrangler d1 create second-brain-db",
     "db:migrate": "wrangler d1 execute second-brain-db --file=db/schema.sql",
